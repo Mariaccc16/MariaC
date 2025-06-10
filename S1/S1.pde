@@ -1,3 +1,2 @@
 "holaaa",
-"casi que no lo logro",
-"omaiga"
+"casi que no lo logro,"
