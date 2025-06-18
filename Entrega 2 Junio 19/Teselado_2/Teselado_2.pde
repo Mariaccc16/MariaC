@@ -23,31 +23,21 @@ void draw() {
       // Triángulo en esquina inferior derecha
       fill(233, 235, 158);
       triangle(x + tam, y + tam, x + tam, y, x, y + tam);
-
-      // Círculo blanco centrado
-      
+    
       fill(172, 193, 150);
       ellipse(x + tam, y + tam / 2, tam/2, tam);
       
-     
-      fill(233, 217, 133);
-      //arc(x + tam / 2, y + tam / 2, tam, tam / 2, PI, TWO_PI);
-      
-      fill(172, 193, 150);
-      //ellipse(x + 2, y + tam / 2, tam/2, tam);
-      
       fill(240, 226, 163);
       arc(x + tam / 2, y + tam, tam/2, tam, PI, TWO_PI);
-      
-      fill(226, 237, 139);
-      //ellipse(x + 2, y + tam / 2, tam/2, tam/2);
-      
-noStroke();
-// Círculo (más arriba)
-fill(210, 222, 183);
-ellipse(x + tam / 2, y + tam / 2 - 15, tam / 2, tam / 2);  // subido en Y
+     
+      noStroke();
 
- fill(240, 226, 163);
+      // Círculo (más arriba)
+
+      fill(210, 222, 183);
+      ellipse(x + tam / 2, y + tam / 2 - 15, tam / 2, tam / 2);  // subido en Y
+
+      fill(240, 226, 163);
       arc(x + tam / 2, y + tam, tam/2, tam, PI, TWO_PI);
     }
   }
