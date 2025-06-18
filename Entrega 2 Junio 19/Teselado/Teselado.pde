@@ -4,10 +4,10 @@
 
 void setup() {
   size(640, 640);
-  background(245);
+  background(245, 247, 220);
 }
 
-int tam = 80;
+int tam = 107;
 
 void draw() {
   
@@ -16,32 +16,28 @@ void draw() {
 
       noStroke();
 
-      // Rectángulo de fondox
-      fill(245, 247, 220);
-      rect(x, y, tam, tam);
-
       // Triángulo en esquina inferior derecha
+      
       fill(233, 235, 158);
       triangle(x + tam, y + tam, x + tam, y, x, y + tam);
 
-      // Círculo blanco centrado
-      
-      fill(172, 193, 150);
-      ellipse(x + tam, y + tam / 2, tam/2, tam);
       stroke(0);
+ 
+      // Arco horizontal
+     
       fill(233, 217, 133);
       arc(x + tam / 2, y + tam / 2, tam, tam / 2, PI, TWO_PI);
-      
-      fill(172, 193, 150);
-      //ellipse(x + 2, y + tam / 2, tam/2, tam);
+     
+     // Arco vertical
       
       fill(240, 226, 163);
       arc(x + tam / 2, y + tam, tam/2, tam, PI, TWO_PI);
       
+      // Círculo 
+      
       fill(226, 237, 139);
       ellipse(x + 2, y + tam / 2, tam/2, tam/2);
       
-
     }
   }
 }
