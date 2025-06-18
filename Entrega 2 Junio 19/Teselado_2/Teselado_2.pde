@@ -21,16 +21,19 @@ void draw() {
       rect(x, y, tam, tam);
 
       // Triángulo en esquina inferior derecha
+
       fill(233, 235, 158);
       triangle(x + tam, y + tam, x + tam, y, x, y + tam);
-    
+
       fill(172, 193, 150);
       ellipse(x + tam, y + tam / 2, tam/2, tam);
       
       fill(240, 226, 163);
       arc(x + tam / 2, y + tam, tam/2, tam, PI, TWO_PI);
-     
+
       noStroke();
+
+noStroke();
 
       // Círculo (más arriba)
 
