@@ -37,7 +37,8 @@ void draw() {
       
       fill(226, 237, 139);
       ellipse(x + 2, y + tamaño / 2, tamaño / 2, tamaño / 2);
-      
+     
+     
     }
   }
 }
