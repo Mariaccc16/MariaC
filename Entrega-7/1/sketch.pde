@@ -1,3 +1,9 @@
+// Nombre: María Camila Serrato Restrepo
+// Código: 202410329
+// Título: E07 - Visualizador Interactivo de Razas de Perros
+// Este sketch permite explorar distintas razas de perros mediante
+// una interfaz visual y sonora.
+
 import processing.sound.*;
 SoundFile ladrido;
 
