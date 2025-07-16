@@ -33,6 +33,7 @@ void setup() {
   // Carga tabla
   tabla = loadTable("dog_breeds.csv", "header");
 
+  // Filtra solo las razas deseadas
   for (TableRow row : tabla.rows()) {
     String raza = row.getString("Breed");
     for (String r : razasDeseadas) {
@@ -52,10 +53,12 @@ void draw() {
     mostrarPantallaFinal();
   } else {
 
+    // Muestra la tarjeta de la raza actual
     if (razasFiltradas.size() > 0) {
       razasFiltradas.get(indexActual).mostrarTarjeta(width / 2 - 150, height / 2 - 180);
     }
 
+    // Instrucción al usuario
     fill(100);
     textAlign(CENTER);
     textFont(textoFont);
@@ -94,7 +97,7 @@ void mousePressed() {
       ladrido.stop();  // ✅ Detiene el ladrido al comenzar
     }
   } else if (mostrarFinal) {
-    // Reinicia desde el principio
+    // Reinicia todo al hacer clic desde la pantalla final
     mostrarFinal = false;
     mostrarInicio = true;
     indexActual = 0;
@@ -126,6 +129,7 @@ class Raza {
     origen = row.getString("Country of Origin");
     longevidad = row.getString("Longevity (yrs)");
 
+    // Carga imagen según el nombre de la raza
     String rutaImagen = nombre.toLowerCase().replace(" ", "").replace("-", "") + ".jpg";
     imagen = loadImage(rutaImagen);
   }
