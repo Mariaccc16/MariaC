@@ -42,7 +42,7 @@ boolean voice2Reproducido = false;
 
 void setup() {
   size(800, 800);
-  frameRate(5); // controla la velocidad de animación
+  frameRate(7); // controla la velocidad de animación
 
   miFuente = createFont("BaksoSapi.otf", 32); // Fuente importada
   textFont(miFuente);
@@ -72,10 +72,10 @@ void setup() {
   botonesEmocion.add(new BotonEmocion(670, 440, 120, colorSilencio, "silencio"));
 
   // Carga los sonidos correspondientes
-  sonidoAlegria = new SoundFile(this, "alegria.mp3");
-  sonidoIrritante = new SoundFile(this, "irritante.mp3");
-  sonidoCalma = new SoundFile(this, "calma.mp3");
-  sonidoTristeza = new SoundFile(this, "tristeza.mp3");
+  sonidoAlegria = new SoundFile(this, "alegria2.mp3");
+  sonidoIrritante = new SoundFile(this, "irritante2.mp3");
+  sonidoCalma = new SoundFile(this, "calma2.mp3");
+  sonidoTristeza = new SoundFile(this, "tristeza2.mp3");
   voiceEnOff2 = new SoundFile(this, "voice-en-off-2.mp3");
 }
 
