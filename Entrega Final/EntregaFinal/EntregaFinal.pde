@@ -1,3 +1,8 @@
+// Ana Maria Quiroga - 202313866
+// María Camila Serrato - 202410329
+// Entrega Final
+// Frecuencias Emocionales
+
 // Importa la libreria de sonido
 import processing.sound.*;
 
